@@ -1,0 +1,484 @@
+<html>
+	<head>
+		<style>
+			.float-container {
+				width: 100%;
+				height: 21%;
+				//border: 3px solid red;
+				overflow: hidden;
+			}
+			.float-left-child {
+				width: 1271px;
+				height: 258px;
+				float: left;
+				border-style: none solid solid none;
+				text-align: center;
+				overflow: hidden;
+				position: absolute;
+			}
+			.float-right-child {
+				position: absolute;
+				top: 8px;
+				right: 11px;
+				width: 1250px;
+				height: 258px;
+				float: right;
+				overflow: hidden;
+				border-style: none none solid none;
+			}
+			.veterans {
+				width: 1300px;
+				height: 500px;
+			}
+			.family-friends {
+				width:1500px;
+				height: 500px;
+			}
+			.float-left-groups {
+				position: absolute;
+				background-color: #26292B;
+				float: left;
+				//border: 3px solid red;
+				top: 300px;
+				width: 400px;
+				height: 1500px;
+			}
+			.float-middle-posts {
+				//background-color: #D9D9D9;
+				//border: 3px solid red;
+				position: absolute;
+				top:300px;
+				left: 720px;
+				width: 45%;
+				height: auto;
+				//height: 3450px;
+
+			}
+			.float-right-profile {
+				background-color: #26292B;
+				position: absolute;
+				//border: 3px solid red;
+				top: 300px;
+				right: 130px;
+				width: 400px;
+				height: 450px;
+			}
+			.post-one {
+				background-color: #26292B;
+				position: absolute;
+				width: 90%;
+				height: 600px;
+				top: 50px;
+				left: 55px;
+			}
+			.post-two {
+				background-color: #26292B;
+				position: absolute;
+				width: 90%;
+				height: 600px;
+				top: 700px;
+				left: 55px;
+			}
+			.post-three {
+				background-color: #26292B;
+				position: absolute;
+				width: 90%;
+				height: 600px;
+				top: 1350px;
+				left: 55px;
+			}
+			.post-four {
+				background-color: #26292B;
+				position: absolute;
+				width: 90%;
+				height: 600px;
+				top: 2000px;
+				left: 55px;
+			}
+			.post-five {
+				background-color: #26292B;
+				position: absolute;
+				width: 90%;
+				height: 600px;
+				top: 2650px;
+				left: 55px;
+			}
+			.profile-photo {
+				position: relative;
+				//border: 3px solid red;
+				top:30px;
+				left: 50px;
+				height: 150px;
+				width: 150px;
+			}
+			.post-photo {
+				width: 150px;
+				height: 150px;
+			}
+			.post-title {
+				position: relative;
+				//border: 3px solid red;
+				top: -90px;
+				left: 250px;
+				height: 50px;
+				width: 600px;
+				vertical-align: middle;
+			}
+			.post-body {
+				position: relative;
+				//border: 3px solid red;
+				top: -20px;
+				left: 50px;
+				width: 940px;
+				height: 300px;
+
+			}
+			.post-reply {
+				position: relative;
+				//border: 3px solid red;
+				left: 50px;
+				bottom: 20px;
+				width: 200px;
+				height: 30px;
+			}
+			.post-reply-count {
+				position: relative;
+				//border: 3px solid red;
+				bottom: 70px;
+				right: -940px;
+				width: 100px;
+				height: 30px;
+			}
+			.post-like-count {
+				position: relative;
+				//border: 3px solid red;
+				bottom: 120px;
+				right: -850px;
+				width: 100px;
+				height: 30px;
+			}
+			.link {
+				color: #0C95F9;
+			}
+			.groups-title {
+				position: relative;
+				//border: 3px solid red;
+				top: 0px;
+				left: 150px;
+				width: 150px;
+				height: 50px;
+			}
+			.create-group {
+				position: relative;
+				//border: 3px solid red;
+				top: -5px;
+				left: 70px;
+				width: 250px;
+				height: 50px;
+				text-align: center;
+			}
+			.group-name {
+				position: relative;
+				//border: 3px solid red;
+				top: -15px;
+				left: 70px;
+				width: 250px;
+				height: 50px;
+				text-align: center;
+			}
+			.profile-box-photo {
+				position: relative;
+				//border: 3px solid red;
+				top: 20px;
+				left: 75px;
+				width: 250px;
+				height: 250px;
+			}
+			.profile-box-username {
+				position: relative;
+				//border: 3px solid red;
+				top: 10px;
+				left: 135px;
+				width: 150px;
+				height: 50px;
+				//text-align: center;
+			}
+			.profile-box-profile-link {
+				position: relative;
+				//border: 3px solid red;
+				top: -10px;
+				left: 125px;
+				width: 150px;
+				height: 50px;
+				text-align: center;
+			}
+			.profile-box-settings {
+				position: relative;
+				//border: 3px solid red;
+				top: -40px;
+				left: 125px;
+				width: 150px;
+				height: 50px;
+				text-align: center;
+			}
+			.important-links {
+				position: absolute;
+				//border: 3px solid red;
+				top: 850px;
+				right: 85px;
+				width: 500px;
+				height: 1000px;
+			}
+			.wounded-warrior-link {
+				position: relative;
+				//border: 3px solid red;
+				top: 10px;
+				left: 0px;
+				height: 150px;
+				width: 500px;
+			}
+			.veterans-affairs-link {
+				position: relative;
+				//border: 3px solid red;
+				top: 50px;
+				left: 0px;
+				height: 150px;
+				width: 500px;
+			}
+			.veterans-crisis-link {
+				position: relative;
+				//border: 3px solid red;
+				top: 95px;
+				left: 0px;
+				height: 150px;
+				width: 500px;
+			}
+			.lone-survivor-foundation {
+				position: relative;
+				//border: 3px solid red;
+				top: 140px;
+				left: 0px;
+				height: 150px;
+				width: 500px;
+			}
+			.ptsd-foundation-link {
+				position: relative;
+				//border: 3px solid red;
+				top: 180px;
+				left: 0px;
+				height: 220px;
+				width: 500px;
+			}
+			.create-post {
+				position: relative;
+				//border: 3px solid red;
+				//top: 3300px;
+				//left: 330px;
+				bottom: 0%;
+				left: 28%;
+				height: 100px;
+				width: 500px;
+				text-align: center;
+			}
+			.create-post-font {
+				font-size: 30px;
+				color: #0C95F9;
+			}
+			.create-group-note {
+				position: relative;
+				//border: 3px solid red;
+				top: 80px;
+				left: 115px;
+				width: 800px;
+				height: 150px;
+				text-align: center;
+			}
+			.create-group-note-font {
+				font-size: 30px;
+			}
+			.group-title-header {
+				position: relative;
+				//border: 3px solid red;
+				top: 10px;
+				left: 135px;
+				width: 200px;
+				height: 50px;
+			}
+			.create-group-button {
+				position: relative;
+				background-color: lightgrey;
+				top: 110px;
+				left: 415px;
+				width: 220px;
+				height: 70px;
+				font-size: 23px;
+			}
+			.create-group-background {
+				background-color: #D9D9D9;
+				//border: 3px solid red;
+				position: absolute;
+				top:300px;
+				left: 720px;
+				width: 45%;
+				height: 700px;
+			}
+			.write-post-background-grey {
+				background-color: #26292B;
+				position: absolute;
+				width: 90%;
+				height: 1100px;
+				top: 50px;
+				left: 55px;
+			}
+			.write-post-background-white {
+				background-color: #D9D9D9;
+				//border: 3px solid red;
+				position: absolute;
+				top:300px;
+				left: 720px;
+				width: 45%;
+				height: 1200px;
+			}
+			.post-body-header {
+				position: relative;
+				//border: 3px solid red;
+				top: 40px;
+				left: 135px;
+				width: 200px;
+				height: 50px;
+			}
+			.post-text-area {
+				position: relative;
+				top: 50px;
+				left: 135px;
+			}
+			.create-post-button {
+				position: relative;
+				top: 190px;
+				left: -355px;
+				width: 220px;
+				height: 70px;
+				font-size: 23px;
+			}
+			.welcome-page-background {
+				background-color: #26292B;
+				position: absolute;
+				//border: 3px solid red;
+				top: 0px;
+				left: 800px;
+				width: 900px;
+				height: 1250px;
+				text-align: center;
+			}
+			.select-username {
+				position: absolute;
+				top: 430px;
+				left: 0px;
+				width: 300px;
+				height: 50px;
+			}
+			.username-input {
+				position:absolute;
+				top: 475px;
+				left: 23px;
+			}
+			.select-branch {
+				position: absolute;
+				top: 520px;
+				left: -40px;
+				width: 400px;
+				height: 50px;
+			}
+			.branch-input {
+				position: absolute;
+				top: 565px;
+				left: 24px;
+			}
+			.years-served {
+				position: absolute;
+				top: 608px;
+				left: -68px;
+				width: 400px;
+				height: 50px;
+			}
+			.years-input {
+				position: absolute;
+				top:653px;
+				left: 24px;
+			}
+			.military-specialty {
+				position: absolute;
+				top: 696px;
+				left: -33px;
+				width: 400px;
+				height: 50px;
+			}
+			.specialty-input {
+				position: absolute;
+				top:741px;
+				left: 24px;
+			}
+			.about-yourself {
+				position: absolute;
+				top: 782px;
+				left: -54px;
+				width: 400px;
+				height: 50px;
+			}
+			.about-yourself-input {
+				position: absolute;
+				top: 827px;
+				left: 24px;
+			}
+			.create-profile-button {
+				position: absolute;
+				top: 1115px;
+				left: 340px;
+				width: 220px;
+				height: 70px;
+				font-size: 23px;
+			}
+			.back-homepage {
+				position: absolute;
+				top: 0px;
+				left: -100px;
+				width: 400px;
+				height: 50px;
+			}
+			.create-account-message {
+				position: relative;
+				top: 100px;
+				left: 100px;
+				width: 200px;
+				height: 100px;
+				text-align: center;
+			}
+			h1 {
+				font-size: 100px;
+				color: black;
+				position: absolute;
+				top: 0px;
+				left: 400px;
+			}
+			h2 {
+				font-size: 100px;
+				color: black;
+				position: absolute;
+				top: -10px;
+				right: 150px;
+			}
+			h3 {
+				font-size: 30px;
+				color: #D9D9D9;
+			}
+			h4 {
+				font-size: 50px;
+				color: #D9D9D9;
+			}
+			p {
+				font-size: 20px;
+				color: #D9D9D9;
+			}
+		</style>
+	</head>
+</html>
